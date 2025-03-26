@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: local-H2 # Perfil predeterminado, se puede cambiar en runtime
+  application:
+    name: cleanarch
+  output:
+    ansi: # Habilita los colores en la consola
+      enabled: ALWAYS

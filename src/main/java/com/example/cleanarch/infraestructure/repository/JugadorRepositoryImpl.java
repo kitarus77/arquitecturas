@@ -1,16 +1,16 @@
 package com.example.cleanarch.infraestructure.repository;
 
-import com.example.cleanarch.domain.repository.JugadorRepository;
 import com.example.cleanarch.domain.factories.identificador.Identificador;
 import com.example.cleanarch.domain.models.Jugador;
+import com.example.cleanarch.domain.repository.JugadorRepository;
 import com.example.cleanarch.infraestructure.entities.JugadorJpaEntity;
 import com.example.cleanarch.infraestructure.mappers.JugadorJpaMapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 @RequiredArgsConstructor
-public class JugadorJpaRepositoryImpl implements JugadorRepository {
+public class JugadorRepositoryImpl implements JugadorRepository {
 
     private final JugadorJpaRepository jugadorJpaRepository;
     private final JugadorJpaMapper jugadorMapper;
