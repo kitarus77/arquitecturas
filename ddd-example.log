@@ -14,3 +14,348 @@
 2025-10-04T11:25:57.234+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-10-04T11:25:57.256+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-10-04T11:25:57.263+02:00  INFO 15888 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Started Application in 1.607 seconds (process running for 2.088)
+2025-10-04T12:55:30.942+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 20632 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T12:55:30.944+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T12:55:30.998+02:00  INFO 20632 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T12:55:30.999+02:00  INFO 20632 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T12:55:31.518+02:00  INFO 20632 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T12:55:31.579+02:00  INFO 20632 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-10-04T12:55:32.080+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T12:55:32.092+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T12:55:32.093+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T12:55:32.131+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T12:55:32.132+02:00  INFO 20632 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
+2025-10-04T12:55:32.158+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T12:55:32.295+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-04T12:55:32.301+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T12:55:32.310+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-04T12:55:32.460+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T12:55:32.514+02:00  INFO 20632 --- [ddd-example] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-04T12:55:32.548+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T12:55:32.847+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T12:55:32.895+02:00  WARN 20632 --- [ddd-example] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T12:55:33.548+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T12:55:33.592+02:00  INFO 20632 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T12:55:33.602+02:00  WARN 20632 --- [ddd-example] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'crearPedidoUseCase' defined in file [C:\dev\workspaces\back\arquitecturas\target\classes\com\kitarsoft\example\application\usecases\CrearPedidoUseCase.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-04T12:55:33.602+02:00  INFO 20632 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T12:55:33.810+02:00  WARN 20632 --- [ddd-example] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-10-04T12:55:33.811+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-04T12:55:33.813+02:00  INFO 20632 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-04T12:55:33.814+02:00  INFO 20632 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-04T12:55:33.822+02:00  INFO 20632 --- [ddd-example] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-04T12:55:33.843+02:00 ERROR 20632 --- [ddd-example] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.kitarsoft.example.application.usecases.CrearPedidoUseCase required a bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' in your configuration.
+
+2025-10-04T13:00:00.444+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 5912 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T13:00:00.446+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T13:00:00.493+02:00  INFO 5912 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T13:00:00.493+02:00  INFO 5912 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T13:00:01.266+02:00  INFO 5912 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T13:00:01.343+02:00  INFO 5912 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2025-10-04T13:00:01.930+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T13:00:01.943+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T13:00:01.944+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T13:00:01.989+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T13:00:01.989+02:00  INFO 5912 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1496 ms
+2025-10-04T13:00:02.016+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T13:00:02.202+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-04T13:00:02.204+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T13:00:02.217+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-04T13:00:02.346+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T13:00:02.395+02:00  INFO 5912 --- [ddd-example] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-04T13:00:02.430+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T13:00:02.718+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T13:00:02.766+02:00  WARN 5912 --- [ddd-example] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T13:00:03.570+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T13:00:03.620+02:00  INFO 5912 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:00:03.631+02:00  WARN 5912 --- [ddd-example] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'crearPedidoUseCase' defined in file [C:\dev\workspaces\back\arquitecturas\target\classes\com\kitarsoft\example\application\usecases\CrearPedidoUseCase.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-04T13:00:03.631+02:00  INFO 5912 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:00:03.844+02:00  WARN 5912 --- [ddd-example] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-10-04T13:00:03.844+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-04T13:00:03.846+02:00  INFO 5912 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-04T13:00:03.847+02:00  INFO 5912 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-04T13:00:03.857+02:00  INFO 5912 --- [ddd-example] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-04T13:00:03.880+02:00 ERROR 5912 --- [ddd-example] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.kitarsoft.example.application.usecases.CrearPedidoUseCase required a bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.kitarsoft.example.domain.ports.out.PedidoRepository' in your configuration.
+
+2025-10-04T13:11:39.086+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 19800 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T13:11:39.089+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T13:11:39.143+02:00  INFO 19800 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T13:11:39.143+02:00  INFO 19800 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T13:11:39.686+02:00  INFO 19800 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T13:11:39.746+02:00  INFO 19800 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-10-04T13:11:40.249+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T13:11:40.264+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T13:11:40.264+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T13:11:40.302+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T13:11:40.302+02:00  INFO 19800 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2025-10-04T13:11:40.328+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T13:11:40.462+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-04T13:11:40.464+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T13:11:40.472+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-04T13:11:40.594+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T13:11:40.649+02:00  INFO 19800 --- [ddd-example] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-04T13:11:40.694+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T13:11:40.951+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T13:11:40.986+02:00  WARN 19800 --- [ddd-example] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T13:11:41.599+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T13:11:41.642+02:00  INFO 19800 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:11:41.894+02:00  WARN 19800 --- [ddd-example] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T13:11:41.962+02:00 DEBUG 19800 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-10-04T13:11:42.029+02:00 DEBUG 19800 --- [ddd-example] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-04T13:11:42.057+02:00 DEBUG 19800 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-04T13:11:42.083+02:00 DEBUG 19800 --- [ddd-example] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-04T13:11:42.180+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T13:11:42.211+02:00  INFO 19800 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-04T13:11:42.217+02:00  INFO 19800 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Started Application in 3.517 seconds (process running for 3.889)
+2025-10-04T13:11:50.180+02:00  INFO 19800 --- [ddd-example] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04T13:11:50.180+02:00  INFO 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-04T13:11:50.180+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-04T13:11:50.180+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-04T13:11:50.180+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-04T13:11:50.181+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d3b6da4
+2025-10-04T13:11:50.181+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4a148bbd
+2025-10-04T13:11:50.182+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-04T13:11:50.182+02:00  INFO 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-04T13:11:50.188+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/pedidos/crear", parameters={}
+2025-10-04T13:11:50.195+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.kitarsoft.example.infraestructure.in.web.controllers.PedidoController#crearPedido(PedidoRequest)
+2025-10-04T13:11:50.259+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PedidoRequest[clienteId=e7b8a9c2-4f3a-4d2a-9b1e-123456789abc, calle=Calle Mayor, numero=12, piso=3,  (truncated)...]
+2025-10-04T13:11:50.302+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.kitarsoft.example.infraestructure.out.persistence.entities.PedidoEntity.estado
+2025-10-04T13:11:50.303+02:00 ERROR 19800 --- [ddd-example] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.kitarsoft.example.infraestructure.out.persistence.entities.PedidoEntity.estado] with root cause
+
+org.hibernate.PropertyValueException: not-null property references a null or transient value : com.kitarsoft.example.infraestructure.out.persistence.entities.PedidoEntity.estado
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:109) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:54) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:124) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.action.internal.AbstractEntityInsertAction.makeEntityManaged(AbstractEntityInsertAction.java:133) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:300) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:273) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:260) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:404) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.14.jar:6.1.14]
+	at jdk.proxy4/jdk.proxy4.$Proxy118.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.14.jar:6.1.14]
+	at jdk.proxy4/jdk.proxy4.$Proxy118.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628) ~[spring-data-jpa-3.3.5.jar:3.3.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.5.jar:3.3.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.14.jar:6.1.14]
+	at jdk.proxy4/jdk.proxy4.$Proxy122.save(Unknown Source) ~[na:na]
+	at com.kitarsoft.example.infraestructure.out.persistence.adapters.PedidoRepositoryAdapter.save(PedidoRepositoryAdapter.java:20) ~[classes/:na]
+	at com.kitarsoft.example.application.usecases.CrearPedidoUseCase.ejecutar(CrearPedidoUseCase.java:22) ~[classes/:na]
+	at com.kitarsoft.example.infraestructure.in.web.controllers.PedidoController.crearPedido(PedidoController.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-04T13:11:50.314+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2025-10-04T13:11:50.315+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-04T13:11:50.328+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-04T13:11:50.329+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Oct 04 13:11:50 CEST 2025, status=500, error=Internal Server Error, trace=org.springf (truncated)...]
+2025-10-04T13:11:50.344+02:00 DEBUG 19800 --- [ddd-example] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-10-04T13:13:30.952+02:00  INFO 19800 --- [ddd-example] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:13:31.356+02:00  WARN 19800 --- [ddd-example] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-10-04T13:13:31.357+02:00  INFO 19800 --- [ddd-example] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-04T13:13:31.387+02:00  INFO 19800 --- [ddd-example] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-04T13:13:33.682+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 23324 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T13:13:33.685+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T13:13:33.738+02:00  INFO 23324 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T13:13:33.738+02:00  INFO 23324 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T13:13:34.278+02:00  INFO 23324 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T13:13:34.342+02:00  INFO 23324 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-10-04T13:13:34.845+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T13:13:34.859+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T13:13:34.859+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T13:13:34.903+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T13:13:34.904+02:00  INFO 23324 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2025-10-04T13:13:34.932+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T13:13:35.060+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-04T13:13:35.062+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T13:13:35.071+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-04T13:13:35.222+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T13:13:35.295+02:00  INFO 23324 --- [ddd-example] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-04T13:13:35.325+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T13:13:35.590+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T13:13:35.631+02:00  WARN 23324 --- [ddd-example] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T13:13:36.276+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T13:13:36.320+02:00  INFO 23324 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:13:36.583+02:00  WARN 23324 --- [ddd-example] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T13:13:36.658+02:00 DEBUG 23324 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-10-04T13:13:36.731+02:00 DEBUG 23324 --- [ddd-example] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-04T13:13:36.759+02:00 DEBUG 23324 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-04T13:13:36.783+02:00 DEBUG 23324 --- [ddd-example] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-04T13:13:36.886+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T13:13:36.911+02:00  INFO 23324 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-04T13:13:36.918+02:00  INFO 23324 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Started Application in 3.623 seconds (process running for 3.996)
+2025-10-04T13:14:04.457+02:00  INFO 23324 --- [ddd-example] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:14:04.871+02:00  WARN 23324 --- [ddd-example] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-10-04T13:14:04.872+02:00  INFO 23324 --- [ddd-example] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-04T13:14:04.886+02:00  INFO 23324 --- [ddd-example] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-04T13:14:07.081+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 1640 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T13:14:07.083+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T13:14:07.131+02:00  INFO 1640 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T13:14:07.131+02:00  INFO 1640 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T13:14:07.663+02:00  INFO 1640 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T13:14:07.729+02:00  INFO 1640 --- [ddd-example] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-10-04T13:14:08.215+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T13:14:08.230+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T13:14:08.230+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T13:14:08.276+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T13:14:08.276+02:00  INFO 1640 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1145 ms
+2025-10-04T13:14:08.302+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T13:14:08.441+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-04T13:14:08.443+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T13:14:08.453+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-04T13:14:08.586+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T13:14:08.653+02:00  INFO 1640 --- [ddd-example] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-04T13:14:08.685+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T13:14:08.951+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T13:14:08.986+02:00  WARN 1640 --- [ddd-example] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T13:14:09.595+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T13:14:09.639+02:00  INFO 1640 --- [ddd-example] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T13:14:09.878+02:00  WARN 1640 --- [ddd-example] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T13:14:09.951+02:00 DEBUG 1640 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-10-04T13:14:10.016+02:00 DEBUG 1640 --- [ddd-example] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-04T13:14:10.043+02:00 DEBUG 1640 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-04T13:14:10.069+02:00 DEBUG 1640 --- [ddd-example] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-04T13:14:10.163+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T13:14:10.188+02:00  INFO 1640 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-04T13:14:10.196+02:00  INFO 1640 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Started Application in 3.49 seconds (process running for 3.848)
+2025-10-04T13:14:16.517+02:00  INFO 1640 --- [ddd-example] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04T13:14:16.517+02:00  INFO 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-04T13:14:16.517+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-04T13:14:16.517+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-04T13:14:16.517+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-04T13:14:16.518+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f93a931
+2025-10-04T13:14:16.518+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e47183a
+2025-10-04T13:14:16.518+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-04T13:14:16.518+02:00  INFO 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-04T13:14:16.525+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/pedidos/crear", parameters={}
+2025-10-04T13:14:16.533+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.kitarsoft.example.infraestructure.in.web.controllers.PedidoController#crearPedido(PedidoRequest)
+2025-10-04T13:14:16.605+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PedidoRequest[clienteId=e7b8a9c2-4f3a-4d2a-9b1e-123456789abc, calle=Calle Mayor, numero=12, piso=3,  (truncated)...]
+2025-10-04T13:14:16.664+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-10-04T13:14:16.664+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Pedido creado con éxito"]
+2025-10-04T13:14:16.667+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-04T13:14:36.495+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-10-04T13:14:36.499+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-04T13:14:36.501+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-10-04T13:14:36.504+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-10-04T13:14:36.505+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-10-04T13:14:36.509+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2025-10-04T13:14:36.510+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-04T13:14:36.519+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-10-04T13:14:36.521+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Oct 04 13:14:36 CEST 2025, status=404, error=Not Found, trace=org.springframework.web (truncated)...]
+2025-10-04T13:14:36.545+02:00 DEBUG 1640 --- [ddd-example] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
