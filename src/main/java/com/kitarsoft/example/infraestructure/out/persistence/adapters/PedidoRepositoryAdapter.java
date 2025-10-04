@@ -1,6 +1,5 @@
 package com.kitarsoft.example.infraestructure.out.persistence.adapters;
 
-import com.kitarsoft.example.domain.EstadoPedido;
 import com.kitarsoft.example.domain.aggregates.Pedido;
 import com.kitarsoft.example.domain.ports.out.PedidoRepository;
 import com.kitarsoft.example.infraestructure.out.persistence.entities.PedidoEntity;

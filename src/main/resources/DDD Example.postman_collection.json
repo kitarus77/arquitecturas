@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "ff8f3bae-f83f-43f4-9e30-343b232bf42b",
+		"name": "DDD Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36656823"
+	},
+	"item": [
+		{
+			"name": "Crear pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clienteId\": \"e7b8a9c2-4f3a-4d2a-9b1e-123456789abc\",\r\n  \"calle\": \"Calle Mayor\",\r\n  \"numero\": \"12\",\r\n  \"piso\": \"3\",\r\n  \"puerta\": \"B\",\r\n  \"codigoPostal\": \"28013\",\r\n  \"ciudad\": \"Madrid\",\r\n  \"provincia\": \"Madrid\",\r\n  \"pais\": \"España\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
