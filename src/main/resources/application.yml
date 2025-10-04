@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ddd-example
+
+  output:
+    ansi:
+      enabled: ALWAYS
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.miempresa.miapp: TRACE
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: ${spring.application.name}.log

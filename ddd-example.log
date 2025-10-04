@@ -1,0 +1,16 @@
+2025-10-04T11:25:56.090+02:00  INFO 15888 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Starting Application using Java 21.0.8 with PID 15888 (C:\dev\workspaces\back\arquitecturas\target\classes started by oskar in C:\dev\workspaces\back\arquitecturas)
+2025-10-04T11:25:56.092+02:00  INFO 15888 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T11:25:56.145+02:00  INFO 15888 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T11:25:56.147+02:00  INFO 15888 --- [ddd-example] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T11:25:56.905+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-04T11:25:56.917+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T11:25:56.917+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-04T11:25:56.951+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T11:25:56.952+02:00  INFO 15888 --- [ddd-example] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2025-10-04T11:25:57.091+02:00 DEBUG 15888 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-10-04T11:25:57.147+02:00 DEBUG 15888 --- [ddd-example] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-04T11:25:57.172+02:00 DEBUG 15888 --- [ddd-example] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-04T11:25:57.195+02:00 DEBUG 15888 --- [ddd-example] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-04T11:25:57.234+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T11:25:57.256+02:00  INFO 15888 --- [ddd-example] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-04T11:25:57.263+02:00  INFO 15888 --- [ddd-example] [restartedMain] com.kitarsoft.example.Application        : Started Application in 1.607 seconds (process running for 2.088)
